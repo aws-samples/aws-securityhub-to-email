@@ -1,2 +1,7 @@
-# aws-securityhub-to-email
+## AWS Securityhub To Email
+
 Demonstrates sending AWS SecurityHub findings to your email
+
+## License Summary
+
+This sample code is made available under a modified MIT license. See the LICENSE file.
