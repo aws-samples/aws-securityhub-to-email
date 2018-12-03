@@ -49,7 +49,7 @@ This post will introduce you to the process of creating AWS Security Hub a custo
     >`{"findingTime":"$.detail.findings[0].updatedAt","finding":"$.detail.findings[0].Types[0]","region":"$.detail.findings[0].Resources[0].Region","account":"$.detail.findings[0].AwsAccountId","findingDescription":"$.detail.findings[0].Description"}` 
 
    #### Input Template: 
-  >`"AWS SecurityHub finding in <region> for Account: <account>. The finding is <finding> and the description of the finding is <findingDescription>."`
+    >`"AWS SecurityHub finding in <region> for Account: <account>. The finding is <finding> and the description of the finding is <findingDescription>."`
 
     -	Click Configure details, then Click Update rule to save
 
