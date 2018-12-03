@@ -15,6 +15,7 @@ This post will introduce you to the process of creating AWS Security Hub a custo
     -	Complete Create Stack form
 
     **Stack Name**:  EnableSecurityHubFindingsEmails
+    
     **EmailAddress**: "Your Email to send Security Hub Findings to"
 
     -	Select Next, fill out any Tags and select Next again
