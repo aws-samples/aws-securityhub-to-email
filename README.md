@@ -7,20 +7,20 @@ This post will introduce you to the process of creating AWS Security Hub a custo
 ## Send Security Hub Finding to Email
 
 1.	Launch CloudFormation Stack 
-    1.	Navigate to (https://console.aws.amazon.com/cloudformation/)
-    2.	Select Create stack
-    3.	Select Upload a template file
-    4.	Select Choose file and locate “SecurityHubFindingsToEmail.json” on your local machine
-    5.	Select Next.
-    6.	Complete Create Stack form
+   -	Navigate to (https://console.aws.amazon.com/cloudformation/)
+    -	Select Create stack
+    -	Select Upload a template file
+    -	Select Choose file and locate “SecurityHubFindingsToEmail.json” on your local machine
+    -	Select Next.
+    -	Complete Create Stack form
 ```
-     **Stack Name**:  EnableSecurityHubFindingsEmails
-     **EmailAddress**: "Your Email to send Security Hub Findings to"
+     • Stack Name:  EnableSecurityHubFindingsEmails
+     • EmailAddress: "Your Email to send Security Hub Findings to"
 ```
-    7.	Select Next, fill out any Tags and select Next again
-    8.	Accept IAM Resource creation
-    9.	Select Create Stack, CloudFormation will then begin creating the stack
-    10.	Wait for the CloudFormation console to report stack creation complete
+    -	Select Next, fill out any Tags and select Next again
+    -	Accept IAM Resource creation
+    -	Select Create Stack, CloudFormation will then begin creating the stack
+    -	Wait for the CloudFormation console to report stack creation complete
 
 2.	Check your email to confirm SNS Topic Subscription
 3.	Enable Security Hub 
@@ -31,9 +31,12 @@ This post will introduce you to the process of creating AWS Security Hub a custo
 
 4.	Create Security Hub Custom Actions
     -	In the Security Hub Settings (https://console.aws.amazon.com/securityhub/home? - /settings) choose the Custom Actions tab. Select Create custom action. Then in the Create custom action pop up, specify the action name, description and ID then choose OK to create the action.
-> •	Name: Send to Email
-> •	Description: This custom action sends selected findings to email addresses defined in an SNS Topic Subscription.
-> •	Custom action ID: SendToEmail
+
+```    
+    • Name: Send to Email
+    • Description: This custom action sends selected findings to email addresses defined in an SNS Topic Subscription.
+    • Custom action ID: SendToEmail
+```
 
     -	Your custom action will now show in the listing of Security Hub custom actions console.
 
