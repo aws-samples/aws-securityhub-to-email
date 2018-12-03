@@ -7,14 +7,14 @@ This post will introduce you to the process of creating AWS Security Hub a custo
 ## Send Security Hub Finding to Email
 
 1.	Launch CloudFormation Stack 
--	Navigate to (https://console.aws.amazon.com/cloudformation/)
--	Select Create stack
--	Select Upload a template file
--	Select Choose file and locate “SecurityHubFindingsToEmail.json” on your local machin
--	Select Next.
+    -	Navigate to (https://console.aws.amazon.com/cloudformation/)
+    -	Select Create stack
+    -	Select Upload a template file
+    -	Select Choose file and locate “SecurityHubFindingsToEmail.json” on your local machin
+    -	Select Next.
 
-> •	Stack Name:  EnableSecurityHubFindingsEmails
-> •	EmailAddress: “Your Email to send Security Hub Findings to”
+    `•	Stack Name:  EnableSecurityHubFindingsEmails`
+    ` •	EmailAddress: "Your Email to send Security Hub Findings to"`
 
 -	Complete Create Stack form
 -	Select Next, fill out any Tags and select Next again
