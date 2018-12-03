@@ -33,11 +33,9 @@ This post will introduce you to the process of creating AWS Security Hub a custo
 4.	Create Security Hub Custom Actions
     -	In the Security Hub Settings (https://console.aws.amazon.com/securityhub/home? - /settings) choose the Custom Actions tab. Select Create custom action. Then in the Create custom action pop up, specify the action name, description and ID then choose OK to create the action.
 
-```    
-    • Name: Send to Email
-    • Description: This custom action sends selected findings to email addresses defined in an SNS Topic Subscription.
-    • Custom action ID: SendToEmail
-```
+    **Name**: Send to Email
+    **Description**: This custom action sends selected findings to email addresses defined in an SNS Topic Subscription.
+    **Custom action ID**: SendToEmail
 
     -	Your custom action will now show in the listing of Security Hub custom actions console.
 
