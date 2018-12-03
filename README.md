@@ -33,14 +33,14 @@ This post will introduce you to the process of creating AWS Security Hub a custo
     -	In the Security Hub Settings (https://console.aws.amazon.com/securityhub/home? - /settings) choose the Custom Actions tab. Select Create custom action. Then in the Create custom action pop up, specify the action name, description and ID then choose OK to create the action.
 
         **Name**: Send to Email  
-        **Description**: This custom action sends selected findings to email addresses defined in an SNS Topic Subscription.  
+        **Description**: This custom action sends findings to email defined in an SNS Topic Subscription.  
         **Custom action ID**: SendToEmail
 
     -	Your custom action will now show in the listing of Security Hub custom actions console.
 
 5.	*Optional* **step to customize the Email notification**
     -	Navigate to the CloudWatch Events console (https://console.aws.amazon.com/cloudwatch/) and select the Events/Rules menu.
-    -	Click on the CloudWatch Event Rule that was created by the CloudFormation Template. It will be named “CloudWatchEventRuleFindingsToEmail”
+    -	Click on the CloudWatch Event Rule that was created by the CloudFormation Template. It will be named “SecurityHubFindingsToEmail”
     -	Select Actions and click on Edit
     -	On the right-hand side of the “Create Rule” console, the SNS Topic “SendFindingsTopic” should be the selected target.
     -	Click “Configure Input”, Select the “Input Transformer” Radio button and fill in the following fields. Customize if you want.
@@ -50,6 +50,6 @@ This post will introduce you to the process of creating AWS Security Hub a custo
    #### Input Template:
  >```"AWS SecurityHub finding in <region> for Account: <account>. The finding is <finding> and the description of the finding is <findingDescription>."```
 
-    - Click Configure details, then Click Update rule to save
+    -   Click Configure details, then Click Update rule to save
 
 6.	**To test out this custom action, navigate to “Testing Custom Actions in AWS Security Hub” at the end of this post.**
