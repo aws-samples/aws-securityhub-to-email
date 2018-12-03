@@ -33,11 +33,11 @@ This post will introduce you to the process of creating AWS Security Hub a custo
 4.	Create Security Hub Custom Actions
     -	In the Security Hub Settings (https://console.aws.amazon.com/securityhub/home? - /settings) choose the Custom Actions tab. Select Create custom action. Then in the Create custom action pop up, specify the action name, description and ID then choose OK to create the action.
 
-    **Name**: Send to Email
+        **Name**: Send to Email
     
-    **Description**: This custom action sends selected findings to email addresses defined in an SNS Topic Subscription.
+        **Description**: This custom action sends selected findings to email addresses defined in an SNS Topic Subscription.
     
-    **Custom action ID**: SendToEmail
+        **Custom action ID**: SendToEmail
 
     -	Your custom action will now show in the listing of Security Hub custom actions console.
 
@@ -48,9 +48,11 @@ This post will introduce you to the process of creating AWS Security Hub a custo
     -	On the right-hand side of the “Create Rule” console, the SNS Topic “SendFindingsTopic” should be the selected target.
     -	Click “Configure Input”, Select the “Input Transformer” Radio button and fill in the following fields. Customize if you want.
 
-    Input Path: 
+        Input Path: 
 
-    `{"findingTime":"$.detail.findings[0].updatedAt","finding":"$.detail.findings[0].Types[0]","region":"$.detail.findings[0].Resources[0].Region","account":"$.detail.findings[0].AwsAccountId","findingDescription":"$.detail.findings[0].Description"}`
+```json
+{"findingTime":"$.detail.findings[0].updatedAt","finding":"$.detail.findings[0].Types[0]","region":"$.detail.findings[0].Resources[0].Region","account":"$.detail.findings[0].AwsAccountId","findingDescription":"$.detail.findings[0].Description"}
+```
 
     Input Template: 
 
