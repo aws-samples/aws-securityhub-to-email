@@ -50,4 +50,5 @@ This post will introduce you to the process of creating AWS Security Hub a custo
  ```"AWS SecurityHub finding in <region> for Account: <account>. The finding is <finding> and the description of the finding is <findingDescription>."```
  
    - Click Configure details, then Click Update rule to save
-6.**To test out this custom action, navigate to “Testing Custom Actions in AWS Security Hub” at the end of this post.**
+
+6.     **To test out this custom action, navigate to “Testing Custom Actions in AWS Security Hub” at the end of this post.**
