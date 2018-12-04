@@ -25,12 +25,11 @@ This post will introduce you to the process of creating AWS Security Hub a custo
 2.	**Check your email to confirm SNS Topic Subscription**  
 3.	**Enable Security Hub** 
        - As a  best business practice, Security Hub should be enabled in each AWS region by first navigating to the console (https://console.aws.amazon.com/securityhub/) in each region and clicking on Enable Security Hub. Note: If you are testing Security Hub you can just enable the service in the same region as you deployed the CloudFormation stack.
-    -	Then, review Service Role Permissions and click on Enable Security Hub  
-
-    -	More information about the IAM Roles Security Hub utilizes can be found at (https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html)
+       - Then, review Service Role Permissions and click on Enable Security Hub
+       - More information about the IAM Roles Security Hub utilizes can be found at (https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html)
 
 4.	**Create Security Hub Custom Actions**
-    -	In the Security Hub Settings (https://console.aws.amazon.com/securityhub/home? - /settings) choose the Custom Actions tab. Select Create custom action. Then in the Create custom action pop up, specify the action name, description and ID then choose OK to create the action.
+       - In the Security Hub Settings (https://console.aws.amazon.com/securityhub/home? - /settings) choose the Custom Actions tab. Select Create custom action. Then in the Create custom action pop up, specify the action name, description and ID then choose OK to create the action.
 
         **Name**: Send to Email  
         **Description**: This custom action sends findings to email defined in an SNS Topic Subscription.  
