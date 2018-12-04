@@ -14,8 +14,8 @@ This post will introduce you to the process of creating AWS Security Hub a custo
        + Select Next
        + Complete Create Stack form
 
-       **Stack Name**:  EnableSecurityHubFindingsEmails  
-       **EmailAddress**: "Your Email to send Security Hub Findings to"
+      **Stack Name**:  EnableSecurityHubFindingsEmails  
+      **EmailAddress**: "Your Email to send Security Hub Findings to"
 
      + Select Next, fill out any Tags and select Next again
      + Accept IAM Resource creation
@@ -29,13 +29,13 @@ This post will introduce you to the process of creating AWS Security Hub a custo
        + More information about the IAM Roles Security Hub utilizes can be found at (https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-settingup.html)
 
 4.	**Create Security Hub Custom Actions**
-       + In the Security Hub Settings (https://console.aws.amazon.com/securityhub/home? - /settings) choose the Custom Actions tab. Select Create custom action. Then in the Create custom action pop up, specify the action name, description and ID then choose OK to create the action.
+       + In the Security Hub Settings (https://console.aws.amazon.com/securityhub/home? - /settings) choose the Custom Actions tab. Select Create custom action. Then in the Create custom action pop up, specify the action name, description and ID then choose OK to create the action
 
-        **Name**: Send to Email  
-        **Description**: This custom action sends findings to email defined in an SNS Topic Subscription.  
-        **Custom action ID**: SendToEmail
+      **Name**: Send to Email  
+      **Description**: This custom action sends findings to email defined in an SNS Topic Subscription.  
+      **Custom action ID**: SendToEmail
 
-       + Your custom action will now show in the listing of Security Hub custom actions console.
+      + Your custom action will now show in the listing of Security Hub custom actions console.
 
 5.	*Optional* **step to customize the Email notification**
        - Navigate to the CloudWatch Events console (https://console.aws.amazon.com/cloudwatch/) and select the Events/Rules menu.
