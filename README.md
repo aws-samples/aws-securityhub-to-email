@@ -7,20 +7,20 @@ This post will introduce you to the process of creating AWS Security Hub a custo
 ## Send Security Hub Finding to Email
 
 1.	**Launch CloudFormation Stack**
-    - 	Navigate to (https://console.aws.amazon.com/cloudformation/)
-    -	Select Create stack
-    -	Select Upload a template file
-    -	Select Choose file and locate “SecurityHubFindingsToEmail.json” on your local machine
-    -	Select Next
-    -	Complete Create Stack form
-
+    + 	Navigate to (https://console.aws.amazon.com/cloudformation/)
+    +	Select Create stack
+    +	Select Upload a template file
+    +	Select Choose file and locate “SecurityHubFindingsToEmail.json” on your local machine
+    +	Select Next
+    +	Complete Create Stack form
+.................
          **Stack Name**:  EnableSecurityHubFindingsEmails  
          **EmailAddress**: "Your Email to send Security Hub Findings to"
-
-    -	Select Next, fill out any Tags and select Next again  
-    -	Accept IAM Resource creation  
-    -	Select Create Stack, CloudFormation will then begin creating the stack
-    -	Wait for the CloudFormation console to report stack creation complete
+.................
+    +	Select Next, fill out any Tags and select Next again  
+    +	Accept IAM Resource creation  
+    +	Select Create Stack, CloudFormation will then begin creating the stack
+    +	Wait for the CloudFormation console to report stack creation complete
 
 2.	**Check your email to confirm SNS Topic Subscription**  
 3.	**Enable Security Hub** 
@@ -50,6 +50,6 @@ This post will introduce you to the process of creating AWS Security Hub a custo
    #### Input Template:
  >```"AWS SecurityHub finding in <region> for Account: <account>. The finding is <finding> and the description of the finding is <findingDescription>."```
 
-    -   Click Configure details, then Click Update rule to save
+    Click Configure details, then Click Update rule to save
 
 6.	**To test out this custom action, navigate to “Testing Custom Actions in AWS Security Hub” at the end of this post.**
