@@ -13,10 +13,10 @@ This post will introduce you to the process of creating AWS Security Hub a custo
     +	Select Choose file and locate “SecurityHubFindingsToEmail.json” on your local machine
     +	Select Next
     +	Complete Create Stack form
-.................
+
          **Stack Name**:  EnableSecurityHubFindingsEmails  
          **EmailAddress**: "Your Email to send Security Hub Findings to"
-.................
+
     +	Select Next, fill out any Tags and select Next again  
     +	Accept IAM Resource creation  
     +	Select Create Stack, CloudFormation will then begin creating the stack
