@@ -5,8 +5,10 @@ Demonstrates sending AWS Security Hub findings to your Email
 This post will introduce you to the process of creating AWS Security Hub a custom action by sending findings to Email.  After reading this blog you will understand the process to create your own custom actions for utilization in your Security Operations play books.
 
 ## Send Security Hub Finding to Email
+This CloudFormation template will create an Amazon SNS Topic and Amazon SNS Subscription, as well as a CloudWatch Event Rule to route findings from Security Hub’s custom actions to your email.
 
 1.	**Launch CloudFormation Stack**
+       + Download CloudFormation template by right clicking on “SecurityHubFindingsToEmail.json” and “Save Link As..” on your local machine
        + Navigate to (https://console.aws.amazon.com/cloudformation/)
        + Select Create stack
        + Select Upload a template file
@@ -38,6 +40,7 @@ This post will introduce you to the process of creating AWS Security Hub a custo
       + Your custom action will now show in the listing of Security Hub custom actions console.
 
 5.	*Optional* **step to customize the Email notification**
+Outlined here is an option to customize the email notification. By default, the email body contains the full JSON formatted text of the Security Hub finding. By making these optional edits the email notification will be one line with enough information for you to decide what your next steps will be.
        - Navigate to the CloudWatch Events console (https://console.aws.amazon.com/cloudwatch/) and select the Events/Rules menu.
        - Click on the CloudWatch Event Rule that was created by the CloudFormation Template. It will be named “SecurityHubFindingsToEmail”
        - Select Actions and click on Edit
