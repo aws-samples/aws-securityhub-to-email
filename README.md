@@ -19,10 +19,10 @@ This CloudFormation template will create an Amazon SNS Topic and Amazon SNS Subs
       **Stack Name**:  EnableSecurityHubFindingsEmails  
       **EmailAddress**: "Your Email to send Security Hub Findings to"
 
-     + Select Next, fill out any Tags and select Next again
-     + Accept IAM Resource creation
-     + Select Create Stack, CloudFormation will then begin creating the stack
-     + Wait for the CloudFormation console to report stack creation complete
+      + Select Next, fill out any Tags and select Next again
+      + Accept IAM Resource creation
+      + Select Create Stack, CloudFormation will then begin creating the stack
+      + Wait for the CloudFormation console to report stack creation complete
 
 2.	**Check your email to confirm SNS Topic Subscription**  
 3.	**Enable Security Hub** 
