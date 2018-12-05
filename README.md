@@ -39,8 +39,7 @@ This CloudFormation template will create an Amazon SNS Topic and Amazon SNS Subs
 
       + Your custom action will now show in the listing of Security Hub custom actions console.
 
-5.	**step to customize the Email notification**  *Optional*
-
+5.	**step to customize the Email notification**  *Optional* . 
 Outlined here is an option to customize the email notification. By default, the email body contains the full JSON formatted text of the Security Hub finding. By making these optional edits the email notification will be one line with enough information for you to decide what your next steps will be.  
        - Navigate to the CloudWatch Events console (https://console.aws.amazon.com/cloudwatch/) and select the Events/Rules menu.
        - Click on the CloudWatch Event Rule that was created by the CloudFormation Template. It will be named “SecurityHubFindingsToEmail”
