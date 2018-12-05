@@ -58,7 +58,7 @@ Outlined here is an option to customize the email notification. By default, the 
        + Navigate to AWS Security Hub Console (https://console.aws.amazon.com/securityhub/)
        + Navigate to Findings
        + Select the check box next to one or more findings
-       + Click the drop-down Actions menu and choose the SendToEmail Custom Action
+       + Click the drop-down Actions menu and choose the **Send To Email** Custom Action
 
 The Security Hub Console will then report “Successfully sent findings to CloudWatchEvents” and you should then receive an email from “AWS Notifications no-reply@sns.amazonaws.com”
 
