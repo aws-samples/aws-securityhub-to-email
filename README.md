@@ -54,7 +54,7 @@ Outlined here is an option to customize the email notification. By default, the 
  
    - Click Configure details, then Click Update rule to save
 
-6.     **Testing the Send to Email Custom Action**
+6.    **Testing the Send to Email Custom Action**
        + Navigate to AWS Security Hub Console (https://console.aws.amazon.com/securityhub/)
        + Navigate to Findings
        + Select the check box next to one or more findings
