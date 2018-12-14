@@ -1,7 +1,6 @@
 # aws-securityhub-to-email
 Demonstrates sending AWS Security Hub findings to your Email 
 
-## Coming Soon!
 This is the companion GitHub repository for the AWS blog post https://aws.amazon.com/blogs/apn/how-to-enable-custom-actions-in-aws-security-hub/
 
 ## Send Security Hub Finding to Email
