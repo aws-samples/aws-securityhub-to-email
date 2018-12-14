@@ -2,7 +2,7 @@
 Demonstrates sending AWS Security Hub findings to your Email 
 
 ## Coming Soon!
-This is the companion GitHub repository for the AWS blog post ... x.x.x.x.x.x.x.x.x.x.x
+This is the companion GitHub repository for the AWS blog post https://aws.amazon.com/blogs/apn/how-to-enable-custom-actions-in-aws-security-hub/
 
 ## Send Security Hub Finding to Email
 This CloudFormation template will create an Amazon SNS Topic and Amazon SNS Subscription, as well as a CloudWatch Event Rule to route findings from Security Hub’s custom actions to your email.
